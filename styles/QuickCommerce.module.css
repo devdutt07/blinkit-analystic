@@ -1,0 +1,75 @@
+.appContainer {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif; /* or your design's font */
+    background: #f8f9fa; /* or as per screenshot */
+  }
+  
+  .sidebar {
+    width: 240px;
+    background: #fff;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .brandInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 1rem 2rem;
+    overflow: auto;
+  }
+  
+  .pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .topControls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .activeBrand {
+    background: #0da487;
+    color: #fff;
+    border: 1px solid #0da487;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .dateRangePicker {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+  }
+  
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+  }
+  
+  .dashboardCard {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    /* box-shadow, or border: as needed */
+    min-height: 200px;
+  }
+  
+  /* Table styling, pinned columns, etc. if not using a library */
+  

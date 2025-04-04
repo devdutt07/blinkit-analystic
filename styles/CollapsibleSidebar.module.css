@@ -1,0 +1,227 @@
+/* CollapsibleSidebar.module.css */
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  background-color: #f5f5f5;
+  border-right: 1px solid #e5e7eb;
+  height: 100vh;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  margin-left: 60px;
+  height: 100%;
+  position: fixed;
+}
+
+.open {
+  width: 240px;
+  background-color: #fbf7f7;
+}
+
+.closed {
+  width: 120px;
+}
+
+.header {
+  padding: 1rem 1rem 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: white;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.capsule {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 10%;
+  background-color: #2ba68d;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.brandText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.chevrons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  color: #00785a;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.toggleBtn {
+  margin-left: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.navMenu {
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navMenu > ul > li {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* .subMenu {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+  color: #777;
+  font-weight: 400;
+  font-size: 0.9rem;
+} */
+.subMenu {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.subMenu li {
+  color: #777; /* lighter text */
+  font-weight: 400;
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subMenu li:hover {
+  background-color: #f2f2f2;
+}
+
+/* Override color for highlighted/selected item */
+.highlight {
+  background-color: #e6f1ec;
+  color: #1a3d31 !important; /* make sure it's darker like 'Channels' */
+  font-weight: 500;
+}
+/*   
+.highlight {
+  background-color: #f2faf8;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+} */
+
+.footer {
+  padding: 1rem;
+  border-top: 1px solid #f0f0f0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.closed .navMenu,
+.closed .footer,
+.closed .header span,
+.closed .header .subMenu {
+  display: none;
+}
+
+.footer {
+  border-top: 1px solid #f0f0f0;
+  font-size: 14px;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute; bottom: 10px;
+}
+
+.footerItem {
+  align-items: center;
+  gap: 0.5rem;
+  color: #374151;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+
+}
+
+.footerItem svg {
+  flex-shrink: 0;
+  stroke: #4b5563;
+  margin-bottom: -4px;
+}
+
+.footerItem span {
+  font-size: 14px;
+  line-height: 1.2;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+/* This class should wrap each nav menu item */
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #1a1a1a;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease;
+}
+
+/* Hide text when collapsed */
+.closed .menuItem span {
+  display: none;
+}
+
+/* Still show icons (SVGs) when collapsed */
+.menuItem svg {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+/* Optional: collapsed submenu hide */
+.closed .subMenu {
+  display: none;
+}
+
+
+.iconLarge {
+  width: 30px !important;
+  height: 30px !important;
+  display: block;
+  margin: 0 auto;
+}
+
+  

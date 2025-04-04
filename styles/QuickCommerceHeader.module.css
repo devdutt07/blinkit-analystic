@@ -1,0 +1,121 @@
+.headerContainer {
+    background: #fff;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #dddddd;
+  }
+  
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .iconButton {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0.25rem 0.5rem;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .toggle {
+    width: 32px;
+    height: 18px;
+    background-color: #d1fae5;
+    border-radius: 999px;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px;
+  }
+  
+  .toggleCircle {
+    width: 12px;
+    height: 12px;
+    background-color: #047857;
+    border-radius: 50%;
+  }
+  
+  .datePicker {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    background: white;
+    color: #1f2937;
+    gap: 0.5rem;
+  }
+  
+  .dateIcon {
+    color: #1f2937;
+  }
+  
+  .dropdownArrow {
+    font-size: 0.7rem;
+  }
+  
+  .channelTabs {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid  #ddd;
+  }
+  
+  .channelBtn {
+    background-color: #e5f9f0;
+    color: #047857;
+    border: none;
+    border-radius: 8px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    border: none;
+    border-radius: 8px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .active {
+    background-color: #c6f6d5;
+    color: #047857;
+  }
+  
+  .logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  
